@@ -4,7 +4,7 @@ import Interfaces.Unidad
 
 class ConversorKMMilla : Conversor() {
 
-    override fun convertTo(valor: Double, deUnidad: Unidad, aUnidad: Unidad) {
-        
+    override fun convertTo(valor: Double, deUnidad: Unidad, aUnidad: Unidad) : Double {
+        return valor * deUnidad.getkmAMilla()
     }
 }
