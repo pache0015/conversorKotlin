@@ -1,10 +1,10 @@
 package Class
-import Interfaces.Unidad
+
 
  open abstract class Conversor {
 
 
-    open fun convertTo( valor : Double, deUnidad : Unidad, aUnidad : Unidad) : Double {
-        return 0.00
+    open fun convertTo( valor : Double, unidadOrig : Unidad, unidadDest : Unidad) : Double {
+        return unidadOrig.convertir(valor, unidadDest)
     }
 }
