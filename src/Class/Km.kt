@@ -11,7 +11,7 @@ class Km(override val valKm : Double = 1.00,
    }
 
    override fun convertir(valor : Double, unidadDestino : Km) : Double{
-       return
+       return 0.00
    }
     override fun convertir(valor : Double, unidadDestino : Milla) : Double{
         return 0.00
